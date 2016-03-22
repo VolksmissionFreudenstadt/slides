@@ -1,0 +1,41 @@
+{
+    "name": "vmfds/slides",
+    "version": "0.2",
+    "description": "Announcement slide generator",
+    "license": "GPL-3.0+",
+    "type": "project",
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "version": "dev-master",
+            "name": "peregrinus/cadre",
+            "source": {
+                "url": "https://github.com/potofcoffee/cadre.git",
+                "type": "git",
+                "reference": "master"
+            }
+        }
+    }],
+    "authors": [
+        {
+            "name": "Christoph Fischer",
+            "email": "chris@toph.de",
+            "homepage": "http://christoph-fischer.org",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/VolksmissionFreudenstadt/slides"
+        }
+    ],
+    "require": {
+        "peregrinus/cadre": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "VMFDS\\Slides\\": "Classes/"
+        }
+    }
+}
